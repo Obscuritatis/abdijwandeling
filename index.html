@@ -140,7 +140,7 @@ nav.tabs a[aria-current="page"]{color:var(--rood)}
 <header class="kop gutter">
   <div class="wrap">
     <div class="rij">
-      <span class="eyebrow">Zaterdag 11 september 2027</span>
+      <span class="eyebrow">Zaterdag 22 mei 2027</span>
       <img class="logo" src="assets/logo-voorelkaar.png" alt="Voor elkaar">
     </div>
     <h1>Abdijwandeling rond Leuven</h1>
@@ -238,7 +238,7 @@ const D={"gesch": {"tijd": [["891", "Keizersberg", "Een keizer op de heuvel", "N
 const $=s=>document.querySelector(s);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const DAG="2027-09-11";
+const DAG="2027-05-22";
 function mins(hm){const [h,m]=hm.split(":").map(Number);return h*60+m}
 function brusselsNow(){
   const f=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Brussels",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false});
