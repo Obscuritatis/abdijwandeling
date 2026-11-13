@@ -44,6 +44,11 @@ main{padding-block:8px calc(96px + env(safe-area-inset-bottom,0px))}
 .lint{display:inline-block;background:var(--rood);color:#fff;font-family:var(--kop);font-weight:800;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 16px;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 50%,100% 100%,0 100%,8px 50%)}
 .view h2{font-size:1.3rem;margin:10px 0 4px}
 .lead{color:var(--grijs);margin:0 0 16px}
+.tekening{margin:0 0 18px;background:#FFFFFF;border-radius:16px;padding:8px 8px 10px;border:1px solid var(--lijn)}
+.tekening img{display:block;width:100%;height:auto;border-radius:10px}
+.tekening figcaption{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font-family:var(--kop);font-weight:700;font-size:.8rem;color:#2A1D1F}
+.tekening figcaption span{display:inline-flex;align-items:center;gap:6px}
+.tekening figcaption b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#BE1622;color:#fff;font-size:.7rem}
 /* tijdlijn */
 .tijdlijn{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .tijdlijn li{display:grid;grid-template-columns:52px 20px 1fr;gap:10px;align-items:start}
@@ -151,6 +156,7 @@ nav.tabs a[aria-current="page"]{color:var(--rood)}
 
 <main class="gutter"><div class="wrap">
   <section class="view" id="v-dag">
+    <figure class="tekening"><img src="assets/abdijen-rode-inkt.jpg" alt="Tekening in rode inkt van de drie abdijen: linksboven de Keizersberg, rechtsboven Vlierbeek, onderaan de Abdij van Park aan de vijver." width="1080" height="720"><figcaption><span><b>1</b>Keizersberg</span><span><b>2</b>Vlierbeek</span><span><b>3</b>Park</span></figcaption></figure>
     <span class="lint">Dagverloop</span>
     <h2>Zo ziet de dag eruit</h2>
     <p class="lead" id="dag-lead">Op de dag zelf duidt de app aan waar we in het programma zitten.</p>
